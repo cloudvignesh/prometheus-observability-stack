@@ -28,7 +28,9 @@ Terraform is installed on your local machine.
 
 ## Prometheus Stack Architecture & Workflow
 In our setup, we will be using the following components.
+
 ![architecture](assets/screenshots/workflow.png)
+
 1. **Prometheus**
 Prometheus is used to scrape the data metrics, pulled from exporters like node exporters. It used to provide metrics to Grafana. It also has a TSDB(Time series database) for storing the metrics. For more info please visit the Prometheus Documentation.
 
