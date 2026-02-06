@@ -2,7 +2,7 @@
 region         = "us-west-2"
 ami_id         = "ami-03fd0aa14bd102718"
 instance_type  = "t4g.micro"
-key_name       = "vignesh-key-pair"
+key_name       = "feb6"
 instance_count = 1
 volume-size = 20
 
