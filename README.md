@@ -230,8 +230,6 @@ To import a dashboard, go to Dashboards --> Create Dashboard --> Import Dashboar
 
 Once the dashboard template is imported, you should be able to see all the node exporter metrics as shown below.
 
-![architecture](assets/screenshots/nodeexporter_dash.png)
-
 ## Simulate & Test Alert Manager Alerts
 You can access the Alertmanager dashboard on http://your-ip-address:9093
 
@@ -245,11 +243,15 @@ You can also check the alert rules using the native promtool prometheus CLI. We 
 ```bash
 sudo docker exec -it prometheus promtool check rules /etc/prometheus/alertrules.yml
 ```
+
 **Test: High Storage & CPU Alert:**
+
 ```bash
 dd if=/dev/zero of=testfile_16GB bs=1M count=16384; openssl speed -multi $(nproc --all) &
 ```
+
 ![architecture](assets/screenshots/alert1.png)
+
 
 ![architecture](assets/screenshots/alert2.png)
 
