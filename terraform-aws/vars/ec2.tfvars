@@ -7,8 +7,8 @@ instance_count = 1
 volume-size = 20
 
 # VPC id
-vpc_id  = "vpc-0a5ca4a92c2e10163"
-subnet_ids     = ["subnet-058a7514ba8adbb07"]
+vpc_id  = "vpc-039053e61cf969403"
+subnet_ids     = ["subnet-068eb134f71ec9c28"]
 
 # Ec2 Tags
 name        = "prometheus-stack"
